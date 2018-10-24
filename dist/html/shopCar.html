@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/goods.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/shop.css">
+    <script src="../js/jquery-1.11.3.js"></script>
+    <script src = '../js/require.js' async="true" defer data-main = '../js/main'></script>
+</head>
+<body class="iconfont">
+    <!--header-->
+        <header >
+        <div class="header">
+            <h1>商城首页</h1>
+            <p> Hi~欢迎来到Z商城，请<a href="#">登陆</a><a href="#">免费注册</a></p>
+            <ul class="header-list-1">
+                <li><a href="#">我的订单</a></li>
+                <li><a id="buyer-center" href="#">买家中心<i>&#xe642</i></a></li>
+                <ul id="buyer-center-con" style="position: absolute">
+                    <li><a style="font-size: 10px;width: 60px" href="#">关注的店铺</a><span>30</span></li>
+                    <li><a style="font-size: 10px;width: 60px" href="#">关注的商品</a><span>48</span></li>
+                </ul>
+                <li><a href="#">购物车<em>0</em>件</a></li>
+                <li><a href="#">帮助中心</a></li>
+                <li id="tab" style="margin: 0 12px">|</li>
+                <li id="iphone1"><i id="iphone">&#xe63d</i><a href="#" style="text-indent: 12px">手机商城<i style="text-indent: 0">&#xe642</i></a></li>
+                <div id="mobile-bd" style="position: absolute">
+                    <img src="http://icon.zol-img.com.cn/zol_shop_logo/shop_wechat.png">
+                </div>
+                <li><a href="#">中关村在线</a></li>
+                <li><a href="#">招商合作</a></li>
+                <li><a href="#">联系客服<i>&#xe642</i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--nav -->
+        <nav>
+            <div class="shop-nav">
+                <div class="shop-logo">
+                    <img src="http://icon.zol-img.com.cn/newshop/shop/index/logo_130x60.png" width="130" height="60">
+                </div>
+                <div class="flow-step">
+
+                    <ul class="flow-step-1">
+                        <li class="s1">加入购物车</li>
+                        <li class="s2">下订单</li>
+                        <li class="s3">去付款</li>
+                        <li class="s4">确认收货</li>
+                        <li class="s5">评价</li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    <!--cart-state-->
+       <div class="wrapper-shop">
+           <div class="cart-state">
+               <p>购物车状态<em>（1/30）</em></p>
+           </div>
+           <div class="total">
+               <input name="submitCart" value="去结算" type="submit">
+               <span>总计（不含运费）：<em>¥</em><em class="total-cart-price">1669</em></span>
+           </div>
+           <div class="order-table">
+               <table width="100%">
+                   <tbody id="shopcar-list">
+                        <tr>
+                            <th class="th-1"><label><!--<input name="checkAllCart" type="checkbox" value="1" checked>全选</label>--></label></th>
+                            <th class="th-2">所选商品</th>
+                            <th class="th-3">单价（元）</th>
+                            <th class="th-4">数量</th>
+                            <th class="th-5">优惠</th>
+                            <th class="th-6">小计（元）</th>
+                            <th class="th-7">操作</th>
+                        </tr>
+                        <tr id="merchant_194784">
+                            <td colspan="7" class=" store-infor clearfix">
+                                <div class="shopname"><input name="merchantId[]" rel="forshop" value="194784" checked="" type="radio">店铺：<a href="http://www.zol.com/shop_194784/" target="_blank">汇通数码风暴专营店</a>                                        </div>
+                                <div class="contact">
+                                    <a class="tag-security" style="margin: 0 -9px 0 0">&nbsp;</a>
+                                </div>
+                                <div class="contact">
+                                    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3222712325?>&amp;site=qq&amp;menu=yes"><img src="http://wpa.qq.com/pa?p=2:3222712325:52" alt="点击这里给我发消息" title="点击这里给我发消息" border="0"></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <div id="cart-list">
+
+                        </div>
+                   </tbody>
+               </table>
+           </div>
+           <div class="total-price">
+               商品总价<span>（不含运费）</span>：<em>¥</em><em class="total-cart-price">1669</em>
+           </div>
+           <div class="order-foot clearfix">
+               <label>
+                   <a href="#" >批量删除</a>
+                   <a href="#" class="go-shopping">&lt;&lt;继续购物</a>
+                   <input value="去结算" name="submitCart" class="accounting-btn" type="submit">
+               </label>
+           </div>
+       </div>
+
+      <!--footer-->
+    <div class="shop-footer">
+        <p class="links"><a target="_blank" href="http://www.zol.com/help/detail/17/73/675.html">关于商城</a>|<a target="_blank" href="http://www.zol.com/marketing/">营销中心</a>|<a target="_blank" href="http://www.zol.com/help/">服务中心</a>|<a target="_blank" href="http://www.zol.com/help/detail/17/73/674.html">联系我们</a>|<a target="_blank" href="http://www.zol.com/help/detail/17/73/676.html">发展历程</a>|<a target="_blank" href="http://www.zol.com/help/detail/17/73/677.html">媒体报道</a></p>
+        <p><span class="copyright">2018中关村在线 版权所有. 京ICP备09041801号-182 <a target="_blank" href="http://www.miibeian.gov.cn/">京ICP证010391号</a></span></p>
+        <div class="authentication"><a target="_blank" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202001021500016"><img alt="经营性网站备案信息" src="http://icon.zol-img.com.cn/zol_shop/index_2012v1/beian.png" width="108" height="40"></a><a target="_blank" href="http://fzp.bjhd.gov.cn/tabid/179/Default.aspx"><img alt="海淀网络警察提醒您" src="http://icon.zol-img.com.cn/zol_shop/index_2012v1/jingcha.png" width="108" height="40"></a><a target="_blank" href="https://search.szfw.org/cert/l/CX20111228001277001325" id="___szfw_logo___"><img src="https://search.szfw.org/cert.png?l=CX20111228001277001325"></a>
+        </div>
+    </div>
+
+</body>
+</html>

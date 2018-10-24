@@ -1,0 +1,375 @@
+.nav-list-2 {
+  display: none;
+  z-index: 20; }
+
+#good-list li:hover .nav-list-2 {
+  display: block; }
+
+.goods {
+  height: 38px;
+  border-bottom: 1px solid red; }
+  .goods h1:hover #nav {
+    display: block; }
+
+.goods-nav-box {
+  height: 246px;
+  overflow: hidden; }
+  .goods-nav-box .goods-nav {
+    height: 246px;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; }
+    .goods-nav-box .goods-nav .crumbs-bar {
+      height: 26px;
+      margin: 20px 0 0; }
+      .goods-nav-box .goods-nav .crumbs-bar .total {
+        float: right;
+        font: 12px/26px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+        color: #999; }
+        .goods-nav-box .goods-nav .crumbs-bar .total em {
+          font-style: normal;
+          padding: 0 5px;
+          color: #c40000; }
+    .goods-nav-box .goods-nav .crumbs-list li {
+      float: left;
+      font: 14px/26px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; }
+    .goods-nav-box .goods-nav .crumbs-list .home {
+      margin: 0 10px 0 0; }
+    .goods-nav-box .goods-nav .crumbs-list .arrow {
+      padding: 0 10px 0 0;
+      font-size: 12px;
+      margin-left: 5px;
+      color: #999; }
+    .goods-nav-box .goods-nav .crumbs-list .current {
+      position: relative;
+      zoom: 1;
+      display: inline-block;
+      padding: 0 26px 0 12px;
+      font: 14px/24px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+      border: 1px solid #ccc;
+      cursor: pointer; }
+    .goods-nav-box .goods-nav .crumbs-list .menu-drop {
+      float: left;
+      position: relative;
+      padding: 0 26px 0 12px;
+      font: 14px/24px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+      border: 1px solid #ccc; }
+    .goods-nav-box .goods-nav .selector {
+      margin: 20px 0 0;
+      border: 2px solid #e6e6e6;
+      overflow: hidden; }
+      .goods-nav-box .goods-nav .selector .prop-item {
+        width: 1196px;
+        height: 39px;
+        position: relative; }
+        .goods-nav-box .goods-nav .selector .prop-item dt {
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 0 15px 0 0;
+          width: 94px;
+          height: 38px;
+          font: 12px/38px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+          text-align: right;
+          color: #666; }
+        .goods-nav-box .goods-nav .selector .prop-item dd {
+          position: absolute;
+          left: 100px;
+          padding: 0 20px;
+          height: 39px;
+          color: #999;
+          overflow: hidden;
+          width: 1046px;
+          zoom: 1;
+          border-left: 1px solid #e6e6e6;
+          background: #fff; }
+          .goods-nav-box .goods-nav .selector .prop-item dd ul {
+            border-top: 1px solid #e6e6e6; }
+            .goods-nav-box .goods-nav .selector .prop-item dd ul li {
+              float: left;
+              padding: 0 30px 0 0;
+              height: 38px;
+              font: 12px/38px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+              overflow: hidden; }
+              .goods-nav-box .goods-nav .selector .prop-item dd ul li a {
+                margin: 0 5px;
+                color: #666; }
+
+.z-server {
+  width: 1180px;
+  padding: 32px 10px 0;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 27px; }
+  .z-server span {
+    float: left;
+    padding: 0 25px;
+    font: 16px/26px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+    color: #666; }
+  .z-server a {
+    display: inline-block;
+    float: left;
+    margin: 0 20px 0 0;
+    font: 16px/26px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+    color: #666; }
+
+.toolbar {
+  margin: 10px 0 0;
+  background: #f7f7f7;
+  border: 1px solid #e6e6e6;
+  width: 955px;
+  height: 38px;
+  margin-left: 110px; }
+  .toolbar li {
+    padding: 0 15px;
+    display: block;
+    font: 12px/38px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+    color: #333;
+    float: left; }
+    .toolbar li i {
+      display: block;
+      float: left;
+      padding: 0 2px;
+      width: 8px;
+      color: #999;
+      line-height: 24px; }
+    .toolbar li .text {
+      margin-top: 5px;
+      float: left;
+      padding: 0 5px;
+      width: 40px;
+      height: 22px;
+      border: 1px solid #e6e6e6;
+      background: #fff;
+      font: 12px/22px arial;
+      color: #999; }
+      .toolbar li .text input {
+        border: none; }
+
+#good-list {
+  width: 960px;
+  height: 1990px;
+  margin-left: 110px;
+  float: left;
+  z-index: 10; }
+  #good-list li {
+    zoom: 1;
+    margin: 20px 0 0;
+    padding: 20px 20px 10px;
+    width: 200px;
+    height: 348px;
+    float: left;
+    z-index: 2; }
+    #good-list li .good-img {
+      position: relative; }
+      #good-list li .good-img img {
+        display: block;
+        height: 200px;
+        width: 200px; }
+      #good-list li .good-img span {
+        display: none;
+        position: absolute;
+        right: 10px;
+        top: 176px;
+        width: 57px;
+        height: 24px;
+        font: 12px/24px arial;
+        text-align: center;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.3); }
+    #good-list li .title {
+      padding: 16px 0 0;
+      height: 40px;
+      overflow: hidden;
+      font: 12px/20px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; }
+      #good-list li .title .label {
+        display: inline-block;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        background-color: #f33;
+        color: #fff; }
+    #good-list li p {
+      float: left;
+      font: 18px/32px Verdana;
+      color: #f33;
+      width: 200px; }
+    #good-list li .shop-name {
+      color: #666;
+      font-size: 12px; }
+    #good-list li .volume {
+      float: left;
+      display: block;
+      width: 200px;
+      height: 22px;
+      color: #999;
+      font: 12px/22px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; }
+      #good-list li .volume em {
+        font-style: normal;
+        color: #666;
+        display: inline-block;
+        margin-left: 4px; }
+      #good-list li .volume .evaluation {
+        margin-left: 60px; }
+
+.footer-bg {
+  position: relative;
+  z-index: 5;
+  background-color: #2d2d2d;
+  height: 199px; }
+
+#hot-list {
+  height: 2122px;
+  width: 220px;
+  float: left;
+  position: relative;
+  top: -40px; }
+  #hot-list .hot-list-header {
+    height: 38px;
+    padding: 0 10px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #e6e6e6; }
+    #hot-list .hot-list-header h3 {
+      float: left;
+      font: 14px/38px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; }
+    #hot-list .hot-list-header span {
+      float: right;
+      font: 12px/38px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+      color: #d0d0d0; }
+  #hot-list #hot-list-con {
+    padding: 10px 10px 0; }
+    #hot-list #hot-list-con li {
+      zoom: 1;
+      padding: 0 0 19px;
+      width: 198px;
+      height: 315px;
+      float: left;
+      z-index: 2; }
+      #hot-list #hot-list-con li .good-img {
+        position: relative; }
+        #hot-list #hot-list-con li .good-img img {
+          display: block;
+          height: 200px;
+          width: 200px; }
+        #hot-list #hot-list-con li .good-img span {
+          display: none;
+          position: absolute;
+          right: 10px;
+          top: 176px;
+          width: 57px;
+          height: 24px;
+          font: 12px/24px arial;
+          text-align: center;
+          color: #fff;
+          background: rgba(0, 0, 0, 0.3); }
+      #hot-list #hot-list-con li .title {
+        padding: 16px 0 0;
+        height: 40px;
+        overflow: hidden;
+        font: 12px/20px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; }
+        #hot-list #hot-list-con li .title .label {
+          display: inline-block;
+          padding: 0 2px;
+          height: 18px;
+          line-height: 18px;
+          background-color: #f33;
+          color: #fff; }
+      #hot-list #hot-list-con li p {
+        float: left;
+        font: 18px/32px Verdana;
+        color: #f33;
+        width: 200px; }
+      #hot-list #hot-list-con li .shop-name {
+        color: #666;
+        font-size: 12px; }
+      #hot-list #hot-list-con li .volume {
+        float: left;
+        display: block;
+        width: 200px;
+        height: 22px;
+        color: #999;
+        font: 12px/22px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; }
+        #hot-list #hot-list-con li .volume em {
+          font-style: normal;
+          color: #666;
+          display: inline-block;
+          margin-left: 4px; }
+        #hot-list #hot-list-con li .volume .evaluation {
+          margin-left: 60px; }
+
+.page {
+  margin: 0 -2px 0 0;
+  padding: 50px 0 30px;
+  text-align: center;
+  width: 962px;
+  height: 43px;
+  float: left;
+  position: relative;
+  top: -110px;
+  left: 110px; }
+  .page span {
+    display: inline-block;
+    margin: 0 2px;
+    padding: 0 12px;
+    height: 32px;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    line-height: 32px;
+    color: #333;
+    background: #fff;
+    border: 1px solid #e6e6e6; }
+  .page a {
+    display: inline-block;
+    margin: 0 2px;
+    padding: 0 12px;
+    height: 32px;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    line-height: 32px;
+    color: #333;
+    background: #fff;
+    border: 1px solid #e6e6e6; }
+
+#good-footer {
+  position: relative;
+  top: -120px;
+  left: 120px; }
+  #good-footer .footer {
+    height: 330px; }
+
+#goods-footer-box {
+  background: #2d2d2d;
+  float: left;
+  height: 159px;
+  width: 1425px;
+  position: relative; }
+  #goods-footer-box .goods-footer-nav {
+    width: 1200px;
+    padding: 25px 0 30px;
+    background: #2d2d2d;
+    margin-left: 120px; }
+    #goods-footer-box .goods-footer-nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+      color: #fff;
+      white-space: normal;
+      word-break: keep-all; }
+      #goods-footer-box .goods-footer-nav ul li span {
+        color: #fff; }
+    #goods-footer-box .goods-footer-nav p {
+      margin-top: 20px; }
+  #goods-footer-box #goods-footer-nav span {
+    color: #fff; }
+
+.shop-goods {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  top: 0;
+  right: 300px;
+  background-color: #795da3;
+  overflow: hidden; }

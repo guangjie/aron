@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="iconfont/iconfont.css">
+        <script src = 'js/require.js' async="true" defer data-main = 'js/main'></script>
+    </head>
+    <body class="iconfont">
+         <!--header start-->
+           <header>
+            <div class="header">
+                <h1>商城首页</h1>
+                <p> Hi~欢迎来到Z商城，请<a href="#">登陆</a><a href="#">免费注册</a></p>
+                <ul class="header-list-1">
+                    <li><a href="#">我的订单</a></li>
+                    <li><a id="buyer-center" href="#">买家中心<i>&#xe642</i></a></li>
+                    <ul id="buyer-center-con" style="position: absolute">
+                        <li><a style="font-size: 10px;width: 60px" href="#">关注的店铺</a><span>30</span></li>
+                        <li><a style="font-size: 10px;width: 60px" href="#">关注的商品</a><span>48</span></li>
+                    </ul>
+                    <li><a href="#">购物车<em>0</em>件</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                    <li id="tab" style="margin: 0 12px">|</li>
+                    <li id="iphone1"><i id="iphone">&#xe63d</i><a href="#" style="text-indent: 12px">手机商城<i style="text-indent: 0">&#xe642</i></a></li>
+                    <div id="mobile-bd" style="position: absolute">
+                        <img src="http://icon.zol-img.com.cn/zol_shop_logo/shop_wechat.png">
+                    </div>
+                    <li><a href="#">中关村在线</a></li>
+                    <li><a href="#">招商合作</a></li>
+                    <li><a href="#">联系客服<i>&#xe642</i></a></li>
+                </ul>
+            </div>
+        </header>
+         <!--nav start-->
+           <nav>
+            <div class="nav">
+                <div class="logo">
+                    <img src="http://icon.zol-img.com.cn/newshop/shop/index/logo_130x60.png">
+                </div>
+                <div class="city-map">
+                    <span id="map-index">青岛 <i>&#xe642</i></span>
+                    <div class="space"></div>
+                    <ul class="city-list" style="position: absolute">
+                        <li><a href="#">北京</a></li>
+                        <li><a href="">成都</a></li>
+                        <li><a class="cur" href="">青岛</a></li>
+                        <li><a href="">西安</a></li>
+                        <li><a href="">郑州</a></li>
+                        <li><a href="">石家庄</a></li>
+                        <li><a href="">平顶山</a></li>
+                        <li><a href="">上海</a></li>
+                        <li><a href="">德阳</a></li>
+                        <li><a href="">邢台</a></li>
+                        <li><a href="">承德</a></li>
+                        <li><a href="">驻马店</a></li>
+                        <li><a href="">安阳</a></li>
+                        <li><a href="">新乡</a></li>
+                        <li><a href="">宝鸡</a></li>
+                        <li><a href="">全国</a></li>
+                    </ul>
+                </div>
+                <div class="search-box">
+                    <form>
+                        <input type="text" placeholder="找找你想要的商品" class="search-text">
+                         <input type="submit" value="搜索" class="search-btn">
+                         <div class="search-hot">
+                             <a href="#">戴尔限时促销</a>
+                             <a href="#">三星note7</a>
+                         </div>
+                    </form>
+                </div>
+                <div class="quick-entry">
+                    <a href="#"><i>&#xe60a;</i>我的订单<em></em></a>
+                    <a href="#"><i>&#xe697;</i>我的优惠劵<em></em></a>
+                    <a href="#"><i>&#xe630;</i>购物车<em></em></a>
+                </div>
+            </div>
+        </nav>
+        <!--nav-list-->
+           <div class="nav-list-box">
+            <div class="nav-list">
+                <h1><i>&#xe60a;</i>&nbsp;&nbsp;&nbsp;&nbsp;全部分类</h1>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">团购</a></li>
+                    <li><a href="#">电子竞技</a></li>
+                    <li><a href="#">本地优选</a></li>
+                    <li><a href="#">竞技优选</a></li>
+                </ul>
+            </div>
+            <div  id="nav" class="nav-list-2" style="position: absolute">
+                <ul id="nav-list5">
+                    <li><i>&#xe63d;</i>&nbsp;&nbsp;&nbsp;&nbsp;手机<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xe68c;</em></li>
+                    <li><i>&#xe615;</i>&nbsp;&nbsp;&nbsp;&nbsp;电脑<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xe68c;</em></li>
+                    <li><i>&#xe632;</i>&nbsp;&nbsp;&nbsp;&nbsp;DIY<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xe68c;</em></li>
+                    <li><i>&#xe610;</i>&nbsp;&nbsp;&nbsp;&nbsp;数码<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xe68c;</em></li>
+                    <li><i>&#xe611;</i>&nbsp;&nbsp;&nbsp;&nbsp;外设<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xe68c;</em></li>
+                    <li><i>&#xe7a3;</i>&nbsp;&nbsp;&nbsp;&nbsp;智能<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xe68c;</em></li>
+                </ul>
+            </div>
+            <div id="nav-list-desc" style="position: absolute">
+                <ul id="list-items"></ul>
+
+            </div>
+        </div>
+       <!--img-->
+          <div class="flexslider">
+             <ul class="slides">
+                 <li><img src="images/1_02.jpg" width="" /></li>
+                 <li><img src="images/2_02.jpg" /></li>
+                 <li><img src="images/3_03.jpg" /></li>
+                 <li><img src="images/1_02.jpg" width="" /></li>
+             </ul>
+              <ol class="flex-list" id="flex-list">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+              </ol>
+         </div>
+       <!--list-->
+          <div class=" purchase-box">
+           <div class="purchase">
+               <div class=" purchase-left">
+                   <img src="http://icon.zol-img.com.cn/newshop/shop/index/tuanBanner.png">
+               </div>
+               <div class=" purchase-right">
+                   <ul class="turn_ware-list">
+                     </ul>
+                   <ul class="turn_ware-host">
+                       <li>
+                           <div class="hot-image">
+                               <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0C/02/ChMkJ1nDlbKIORaLAADvR_DdMk0AAgrdgAdQzMAAO9f025.jpg">
+                           </div>
+                           <div class="hot-list">
+                               <h1>[顺丰包邮]金立手机</h1>
+                               <h2>1999</h2>
+                               <h3>四摄拍照更美，美一拍</h3>
+                               <p>到店团</p>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="hot-image">
+                               <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0C/02/ChMkJ1nDlbKIORaLAADvR_DdMk0AAgrdgAdQzMAAO9f025.jpg">
+                           </div>
+                           <div class="hot-list">
+                               <h1>[顺丰包邮]金立手机</h1>
+                               <h2>1999</h2>
+                               <h3>四摄拍照更美，美一拍</h3>
+                               <p>到店团</p>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="hot-image">
+                               <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0C/02/ChMkJ1nDlbKIORaLAADvR_DdMk0AAgrdgAdQzMAAO9f025.jpg">
+                           </div>
+                           <div class="hot-list">
+                               <h1>[顺丰包邮]金立手机</h1>
+                               <h2>1999</h2>
+                               <h3>四摄拍照更美，美一拍</h3>
+                               <p>到店团</p>
+                           </div>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+
+          <section class="noopsyche-box">
+             <div class="noopsyche">
+                 <div class="noopsyche-header">
+                     <i>&#xe611;</i>
+                     <h3>家电优选</h3>
+                 </div>
+                 <div class="noopsyche-left">
+                     <div class="noopsyche-left-image">
+                         <ul id="img-list">
+                             <li><img src="https://mercrt-fd.zol-img.com.cn/g5/M00/09/0A/ChMkJlsCcK6Icq92AAEuHI59gSsAAohCAI8sbcAAS40265.jpg"></li>
+                             <li><img src="https://mercrt-fd.zol-img.com.cn/g5/M00/07/03/ChMkJ1nnElGINVavAABL_KxGWs8AAhXiwHbrv4AAEwU004.jpg"></li>
+                             <li><img src="https://mercrt-fd.zol-img.com.cn/g5/M00/09/0A/ChMkJlsCcK6Icq92AAEuHI59gSsAAohCAI8sbcAAS40265.jpg"></li>
+                         </ul>
+                     </div>
+                     <div class="noopsyche-left-list">
+                         <ul class="icon-list">
+
+                         </ul>
+                     </div>
+
+                 </div>
+                 <div class="noopsyche-right">
+                     <div class="noopsyche-right-header">
+                         <ul id="header-list">
+                             <li>彩电</li>
+                             <li>冰箱</li>
+                             <li>洗衣机</li>
+                             <li>厨卫</li>
+                             <li>小彩电</li>
+                         </ul>
+
+                     </div>
+                     <div class="noopsyche-right-con">
+                                 <ul class="con-item">
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/06/0E/ChMkJ1rEfNeIBHfwAAD55rbKMzoAAnWIAFP_rAAAPn-538.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/06/0E/ChMkJ1rEfNeIBHfwAAD55rbKMzoAAnWIAFP_rAAAPn-538.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/06/0E/ChMkJ1rEfNeIBHfwAAD55rbKMzoAAnWIAFP_rAAAPn-538.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/06/0E/ChMkJ1rEfNeIBHfwAAD55rbKMzoAAnWIAFP_rAAAPn-538.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/06/0E/ChMkJ1rEfNeIBHfwAAD55rbKMzoAAnWIAFP_rAAAPn-538.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/06/0E/ChMkJ1rEfNeIBHfwAAD55rbKMzoAAnWIAFP_rAAAPn-538.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                 </ul>
+                                 <ul class="con-item">
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJ1qroxWIfM9rAACj3lHk1I4AAmxpwD_cRcAAKP2927.jpg">
+                                         <h1>窄边蓝光高清节能美的冰箱</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJ1qroxWIfM9rAACj3lHk1I4AAmxpwD_cRcAAKP2927.jpg">
+                                         <h1>窄边蓝光高清节能美的冰箱</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJ1qroxWIfM9rAACj3lHk1I4AAmxpwD_cRcAAKP2927.jpg">
+                                         <h1>窄边蓝光高清节能美的冰箱</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJ1qroxWIfM9rAACj3lHk1I4AAmxpwD_cRcAAKP2927.jpg">
+                                         <h1>窄边蓝光高清节能美的冰箱</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJ1qroxWIfM9rAACj3lHk1I4AAmxpwD_cRcAAKP2927.jpg">
+                                         <h1>窄边蓝光高清节能美的冰箱</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJ1qroxWIfM9rAACj3lHk1I4AAmxpwD_cRcAAKP2927.jpg">
+                                         <h1>窄边蓝光高清节能美的冰箱</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                 </ul>
+                                 <ul class="con-item">
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJlqrsMGIcdacAAD7ZnHggegAAmxugDwYxwAAPt-112.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJlqrsMGIcdacAAD7ZnHggegAAmxugDwYxwAAPt-112.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJlqrsMGIcdacAAD7ZnHggegAAmxugDwYxwAAPt-112.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJlqrsMGIcdacAAD7ZnHggegAAmxugDwYxwAAPt-112.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJlqrsMGIcdacAAD7ZnHggegAAmxugDwYxwAAPt-112.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJlqrsMGIcdacAAD7ZnHggegAAmxugDwYxwAAPt-112.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                 </ul>
+                                 <ul class="con-item">
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJ1qrsvyIWQpPAABsfxDg2t0AAmxvwDI4uAAAGyX389.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJ1qrsvyIWQpPAABsfxDg2t0AAmxvwDI4uAAAGyX389.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJ1qrsvyIWQpPAABsfxDg2t0AAmxvwDI4uAAAGyX389.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJ1qrsvyIWQpPAABsfxDg2t0AAmxvwDI4uAAAGyX389.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJ1qrsvyIWQpPAABsfxDg2t0AAmxvwDI4uAAAGyX389.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJ1qrsvyIWQpPAABsfxDg2t0AAmxvwDI4uAAAGyX389.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                 </ul>
+                                 <ul class="con-item">
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJ1qrrduIYx-6AAIMV2jYdSoAAmxtgFRuI8AAgxv499.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJ1qrrduIYx-6AAIMV2jYdSoAAmxtgFRuI8AAgxv499.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJ1qrrduIYx-6AAIMV2jYdSoAAmxtgFRuI8AAgxv499.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJ1qrrduIYx-6AAIMV2jYdSoAAmxtgFRuI8AAgxv499.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJ1qrrduIYx-6AAIMV2jYdSoAAmxtgFRuI8AAgxv499.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                     <li class="items">
+                                         <img src="https://mercrt-fd.zol-img.com.cn/g5/M00/0D/0C/ChMkJ1qrrduIYx-6AAIMV2jYdSoAAmxtgFRuI8AAgxv499.jpg">
+                                         <h1>窄边蓝光高清节能平板液晶电视机</h1>
+                                         <p>¥999.00</p>
+                                     </li>
+                                 </ul>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+          <div class="zc-toolbar-tabbar">
+           <i>&#xe60a;</i>
+           <i>&#xe7a3;</i>
+           <i>&#xe630;</i>
+           <i>&#xe697;</i>
+           <i>&#xe628;</i>
+              <p class="p1">我的订单</p>
+              <p class="p2">我的足迹</p>
+              <p class="p3">购物车</p>
+              <p class="p4">优惠券</p>
+              <p class="p5">返回顶部</p>
+       </div>
+
+
+       <!--footer-->
+          <footer>
+              <div class="footer">
+                  <div class="footer-service">
+                      <ul>
+                          <li>
+                              <p class="top">先行赔付</p>
+                              <p class="below">权益受损先行赔偿</p>
+                          </li>
+                          <li>
+                              <p class="top">先行赔付</p>
+                              <p class="below">权益受损先行赔偿</p>
+                          </li>
+                          <li>
+                              <p class="top">先行赔付</p>
+                              <p class="below">权益受损先行赔偿</p>
+                          </li>
+                          <li>
+                              <p class="top">先行赔付</p>
+                              <p class="below">权益受损先行赔偿</p>
+                          </li>
+                          <li>
+                              <p class="top">先行赔付</p>
+                              <p class="below">权益受损先行赔偿</p>
+                          </li>
+                          <li>
+                              <p class="top">先行赔付</p>
+                              <p class="below">权益受损先行赔偿</p>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="footer-service-relative">
+                      <div class="foot-list">
+                          <ul>
+                              <p>购物指南</p>
+                              <li>账号注册</li>
+                              <li>购物流程</li>
+                              <li>付款方式</li>
+                          </ul>
+                          <ul>
+                              <p>售后服务</p>
+                              <li>先行赔付</li>
+                              <li>退款退货流程</li>
+                              <li>投诉举报</li>
+                          </ul>
+                          <ul>
+                              <p>购物指南</p>
+                              <li>账号注册</li>
+                              <li>购物流程</li>
+                              <li>付款方式</li>
+                              <li>付款方式</li>
+                          </ul>
+                          <ul>
+                              <p>售后服务</p>
+                              <li>先行赔付</li>
+                          </ul>
+                      </div>
+                      <div class="foot-list1">
+                          <dl class="hotline">
+                              <dt>400-688-1999</dt>
+                              <dd>
+                                  <p>工作日 9:00 - 18:00</p>
+                              </dd>
+                          </dl>
+                          <dl class="cooperation1">
+                              <dt>招商合作</dt>
+                              <dd>
+                                  <p>助力3C零售商互联网转型</p>
+                                  <p>开启新零售时代全新旅程！</p>
+                                  <a href="http://www.rongroad.com/" class="btn" target="_blank"><span>查看详细</span>&gt;</a>
+                              </dd>
+                          </dl>
+
+                      </div>
+                  </div>
+              </div>
+          </footer>
+          <div class="footer-nav-box">
+              <div class="footer-nav">
+                  <ul id="list-nav">
+                      <li>中关村在线</li><span>|</span>
+                      <li>z商城</li><span>|</span>
+                      <li>团购</li><span>|</span>
+                      <li>产品报价</li><span>|</span>
+                      <li>论坛</li><span>|</span>
+                      <li>问答</li>
+                  </ul>
+                  <ul id="list-nav2">
+                      <li>中关村在线</li><span>|</span>
+                      <li>z商城</li><span>|</span>
+                      <li>团购</li><span>|</span>
+                      <li>产品报价</li><span>|</span>
+
+                  </ul>
+                  <p>©2018 中关村在线 版权所有. 京ICP证150096号京ICP备14061128号网络文化经营许可证京网文[2016]1631-199</p>
+                  <div class="weixi">
+                      <img src="http://icon.zol-img.com.cn/newshop/shop/index/qr.png">
+                  </div>
+              </div>
+          </div>
+          <div id="con-nav">
+
+              <a href="" class="floor">领券中心</a>
+              <a href="" class="floor">同城购</a>
+              <a href="" class="floor">Z智选</a>
+              <a href="" class="floor">品牌精选</a>
+              <a href="" class="floor">团购</a><a href="javascript:;" class="floor">电子竞技</a>
+              <a href="" class="floor">家电优选</a>
+              <a href="" class="floor">数码潮品</a>
+              <a href="" class="floor">本周热销</a>
+              <a class="back-top" href="">回顶部<span class="trangle"></span></a>
+
+          </div>
+    </body>
+</html>

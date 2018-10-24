@@ -1,0 +1,249 @@
+.de-wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  height: 822px; }
+  .de-wrapper .bread-crumbs {
+    width: 1200px;
+    height: 18px; }
+    .de-wrapper .bread-crumbs a {
+      font: 12px/1.5 "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+      color: #333; }
+  .de-wrapper .de-detail {
+    width: 1198px;
+    height: 750px;
+    border: 1px solid #ededed;
+    overflow: hidden; }
+    .de-wrapper .de-detail .de-focus {
+      margin-top: 3px;
+      float: left;
+      padding: 10px 0 0 20px;
+      width: 400px;
+      z-index: 2; }
+      .de-wrapper .de-detail .de-focus .big-image {
+        position: relative;
+        width: 400px;
+        height: 400px; }
+        .de-wrapper .de-detail .de-focus .big-image .block {
+          position: absolute;
+          z-index: 2;
+          visibility: visible;
+          opacity: 0.5;
+          width: 198px;
+          height: 198px;
+          left: 9.75px;
+          top: 201.5px;
+          display: none;
+          background: #ffffff; }
+      .de-wrapper .de-detail .de-focus .img-list {
+        width: 415px;
+        padding: 0 0 0 1px;
+        overflow: hidden;
+        margin-top: 5px; }
+        .de-wrapper .de-detail .de-focus .img-list li {
+          float: left;
+          width: 68px;
+          height: 70px;
+          margin: 0 12px 0 0;
+          position: relative; }
+      .de-wrapper .de-detail .de-focus .zs-active {
+        width: 400px;
+        height: 22px;
+        padding: 20px 0; }
+        .de-wrapper .de-detail .de-focus .zs-active a {
+          font: 12px/1.5 "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+          color: #333;
+          float: left;
+          position: relative;
+          margin: 0 15px 0 0;
+          padding: 0 0 0 20px;
+          line-height: 22px; }
+      .de-wrapper .de-detail .de-focus .big-img-desc {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        display: none;
+        overflow: hidden;
+        background-color: #fff;
+        z-index: 5;
+        top: 220px;
+        left: 520px; }
+        .de-wrapper .de-detail .de-focus .big-img-desc img {
+          position: absolute;
+          width: 1000px;
+          height: 1000px; }
+    .de-wrapper .de-detail .de-detail-wrap {
+      width: 530px;
+      height: 794px;
+      float: left;
+      padding: 10px 20px 0 0;
+      margin-left: 20px; }
+      .de-wrapper .de-detail .de-detail-wrap h3 {
+        padding: 7px 0 0;
+        font: 16px/22px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1"; }
+        .de-wrapper .de-detail .de-detail-wrap h3 span {
+          display: block;
+          color: #999;
+          font-size: 14px;
+          text-indent: 10px; }
+      .de-wrapper .de-detail .de-detail-wrap .zs-price-panel {
+        margin: 0 0 0;
+        padding: 5px 10px;
+        background: #f7f7f7;
+        width: 510px;
+        height: 136px; }
+        .de-wrapper .de-detail .de-detail-wrap .zs-price-panel dl {
+          padding: 0 0 0 75px;
+          position: relative;
+          zoom: 1;
+          line-height: 30px;
+          font-style: normal; }
+          .de-wrapper .de-detail .de-detail-wrap .zs-price-panel dl dt {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 65px;
+            color: #666; }
+          .de-wrapper .de-detail .de-detail-wrap .zs-price-panel dl dd {
+            overflow: hidden;
+            width: 435px; }
+            .de-wrapper .de-detail .de-detail-wrap .zs-price-panel dl dd span {
+              float: left;
+              margin: -2px 0 0;
+              height: 32px;
+              overflow: hidden;
+              font-size: 16px;
+              vertical-align: middle;
+              color: #c00; }
+            .de-wrapper .de-detail .de-detail-wrap .zs-price-panel dl dd em {
+              font-style: normal;
+              padding: 0 0 0 5px;
+              font-size: 30px;
+              font-weight: bold; }
+          .de-wrapper .de-detail .de-detail-wrap .zs-price-panel dl .clearfix a {
+            position: relative;
+            float: left;
+            margin: 0 7px 4px 0;
+            height: 18px;
+            line-height: 18px; }
+            .de-wrapper .de-detail .de-detail-wrap .zs-price-panel dl .clearfix a span {
+              display: block;
+              padding: 0 10px;
+              background: #f45c5f;
+              margin-top: 5px;
+              height: 18px;
+              line-height: 18px;
+              font: 12px/18px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+              color: #fff; }
+          .de-wrapper .de-detail .de-detail-wrap .zs-price-panel dl .clearfix i {
+            position: absolute;
+            top: 6px;
+            width: 2px;
+            height: 18px;
+            line-height: 18px;
+            font: 0/0 arial;
+            text-indent: -9999em;
+            overflow: hidden;
+            background: url(http://icon.zol-img.com.cn/newshop/shop/MarketingTool/setcoupon/coupon_ico.png) no-repeat; }
+          .de-wrapper .de-detail .de-detail-wrap .zs-price-panel dl .clearfix .left-bg {
+            left: 0;
+            background-position: 0 0; }
+          .de-wrapper .de-detail .de-detail-wrap .zs-price-panel dl .clearfix .right-bg {
+            right: 0;
+            background-position: -2px 0; }
+      .de-wrapper .de-detail .de-detail-wrap .zs-detail-infor {
+        padding: 10px 0 20px;
+        width: 530px;
+        height: 558px;
+        font-size: 14px; }
+        .de-wrapper .de-detail .de-detail-wrap .zs-detail-infor dl {
+          margin: 5px 10px 0;
+          position: relative; }
+          .de-wrapper .de-detail .de-detail-wrap .zs-detail-infor dl dt {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 32px;
+            line-height: 32px;
+            color: #666; }
+          .de-wrapper .de-detail .de-detail-wrap .zs-detail-infor dl dd {
+            padding: 0 0 0 65px;
+            line-height: 32px; }
+            .de-wrapper .de-detail .de-detail-wrap .zs-detail-infor dl dd span {
+              padding: 0 7px;
+              display: inline-block; }
+            .de-wrapper .de-detail .de-detail-wrap .zs-detail-infor dl dd em {
+              color: #f33;
+              font-weight: bold;
+              font-style: normal; }
+            .de-wrapper .de-detail .de-detail-wrap .zs-detail-infor dl dd .line {
+              padding: 0 10px;
+              color: #e6e6e6; }
+            .de-wrapper .de-detail .de-detail-wrap .zs-detail-infor dl dd .area-name {
+              position: relative;
+              display: inline-block;
+              height: 23px;
+              border: 1px solid #e6e6e6;
+              padding: 0 20px 0 6px;
+              line-height: 23px;
+              cursor: pointer;
+              background-position: 100% 0;
+              z-index: 2;
+              background-color: #fff; }
+        .de-wrapper .de-detail .de-detail-wrap .zs-detail-infor .skin-inner {
+          margin: 10px 0 15px;
+          border-top: 1px solid #f2f2f2;
+          width: 530px;
+          height: 400px; }
+          .de-wrapper .de-detail .de-detail-wrap .zs-detail-infor .skin-inner dl {
+            position: relative;
+            margin-top: 10px; }
+            .de-wrapper .de-detail .de-detail-wrap .zs-detail-infor .skin-inner dl dt {
+              position: absolute;
+              top: 4px;
+              left: 10px;
+              height: 32px;
+              line-height: 32px;
+              color: #666; }
+            .de-wrapper .de-detail .de-detail-wrap .zs-detail-infor .skin-inner dl dd {
+              margin-left: 20px; }
+              .de-wrapper .de-detail .de-detail-wrap .zs-detail-infor .skin-inner dl dd span {
+                white-space: nowrap;
+                display: inline-block;
+                padding: 0 10px;
+                height: 28px;
+                line-height: 28px;
+                border: 1px solid #e6e6e6;
+                color: #333;
+                background-color: #FFF;
+                margin-right: 5px; }
+              .de-wrapper .de-detail .de-detail-wrap .zs-detail-infor .skin-inner dl dd input {
+                width: 40px;
+                height: 28px;
+                text-align: center;
+                font: 12px/28px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+                border: 0 none;
+                border-top: 1px solid #e6e6e6;
+                border-bottom: 1px solid #e6e6e6;
+                color: #333; }
+          .de-wrapper .de-detail .de-detail-wrap .zs-detail-infor .skin-inner .zs-detail-btn {
+            padding: 30px 0 0 65px;
+            height: 50px;
+            width: 465px; }
+            .de-wrapper .de-detail .de-detail-wrap .zs-detail-infor .skin-inner .zs-detail-btn a {
+              display: inline-block;
+              font-size: 20px;
+              line-height: 48px;
+              text-align: center; }
+            .de-wrapper .de-detail .de-detail-wrap .zs-detail-infor .skin-inner .zs-detail-btn #buynow {
+              width: 140px;
+              height: 50px;
+              color: #fff;
+              background: #c00;
+              margin-right: 10px; }
+            .de-wrapper .de-detail .de-detail-wrap .zs-detail-infor .skin-inner .zs-detail-btn #add-shop {
+              width: 138px;
+              height: 48px;
+              border: 1px solid #ffd9d9;
+              background-color: #ffeded;
+              color: #c00;
+              line-height: 48px; }

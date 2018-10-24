@@ -1,0 +1,162 @@
+.wrap {
+  height: 472px;
+  margin-top: 50px; }
+  .wrap header {
+    width: 990px;
+    height: 94px;
+    margin: 0 auto;
+    overflow: hidden; }
+    .wrap header .header {
+      margin-top: 14px;
+      height: 60px; }
+      .wrap header .header .logo {
+        width: 303px;
+        display: inline-block; }
+        .wrap header .header .logo img {
+          display: block;
+          float: left; }
+        .wrap header .header .logo p {
+          display: block;
+          float: left;
+          margin: 8px 0 0 8px;
+          padding-left: 10px;
+          font: 14px/44px simsun;
+          color: #666;
+          border-left: 1px solid #e6e6e6;
+          cursor: pointer; }
+      .wrap header .header .register-bar {
+        float: right;
+        padding: 21px 0 0;
+        font-size: 14px;
+        line-height: 22px;
+        width: 220px; }
+        .wrap header .header .register-bar a {
+          float: right;
+          height: 16px;
+          padding: 3px 10px;
+          color: #c00;
+          font: normal 14px/14px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1"; }
+  .wrap section {
+    height: 378px;
+    margin: 0 auto;
+    width: 990px; }
+    .wrap section .content {
+      width: 988px;
+      height: 350px;
+      border: 1px solid #e6e6e6; }
+      .wrap section .content .wrapper-login {
+        overflow: hidden;
+        float: left;
+        width: 520px; }
+        .wrap section .content .wrapper-login img {
+          display: block; }
+      .wrap section .content .login-lawyer {
+        width: 290px;
+        height: 338px;
+        float: right;
+        padding: 0 85px 0 0;
+        overflow: hidden; }
+        .wrap section .content .login-lawyer .login-header {
+          width: 290px;
+          height: 35px;
+          padding-top: 20px; }
+          .wrap section .content .login-lawyer .login-header h3 {
+            display: block;
+            width: 50%;
+            float: left;
+            height: 35px;
+            overflow: hidden;
+            font: 18px/35px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+            color: #666;
+            text-align: center;
+            margin-bottom: -2px;
+            cursor: pointer; }
+          .wrap section .content .login-lawyer .login-header h3:nth-child(1) {
+            border-bottom: 2px solid #de3030;
+            color: #333; }
+        .wrap section .content .login-lawyer .login-con {
+          width: 290px;
+          height: 175px;
+          padding-top: 25px; }
+          .wrap section .content .login-lawyer .login-con input {
+            margin: 0 0 7px;
+            padding: 8px 5px;
+            width: 278px;
+            height: 22px;
+            border: 1px solid #ccc; }
+          .wrap section .content .login-lawyer .login-con .login-t {
+            float: left;
+            padding: 0 0 0 17px;
+            font-size: 12px;
+            height: 28px;
+            line-height: 28px;
+            width: 290px;
+            margin-bottom: 10px; }
+            .wrap section .content .login-lawyer .login-con .login-t a:nth-child(2) {
+              float: right;
+              display: inline-block;
+              margin-right: 20px;
+              color: #134ba0; }
+            .wrap section .content .login-lawyer .login-con .login-t a:hover {
+              color: #c00;
+              text-decoration: underline; }
+          .wrap section .content .login-lawyer .login-con #login-btn {
+            display: block;
+            margin: 0 0 10px;
+            padding: 0;
+            width: 290px;
+            height: 40px;
+            line-height: 40px;
+            font: bold 14px/40px "Arial";
+            color: #fff;
+            text-align: center;
+            border: 0 none;
+            background: url(https://login.zol.com/image/bg.png) no-repeat;
+            background-position: 0 0; }
+          .wrap section .content .login-lawyer .login-con .collaborate {
+            text-align: center;
+            color: #666666;
+            width: 290px;
+            height: 18px;
+            margin-top: 15px;
+            font: 12px/1.5 Arial; }
+            .wrap section .content .login-lawyer .login-con .collaborate div {
+              float: left;
+              height: 1px;
+              background: #f0f0f0;
+              width: 100px;
+              margin-top: 7px; }
+            .wrap section .content .login-lawyer .login-con .collaborate p {
+              float: left; }
+          .wrap section .content .login-lawyer .login-con .login-select a {
+            float: left;
+            margin: 0 7px 0 5px;
+            width: 38px;
+            height: 38px;
+            text-indent: -9999em;
+            overflow: hidden;
+            background: url(http://icon.zol-img.com.cn/newshop/login/bgs2.png) 0 0 no-repeat; }
+  .wrap .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 50px 0 0;
+    padding: 12px 0 25px;
+    border-top: 1px solid #dcdcdc; }
+    .wrap .footer .wrapper {
+      width: 990px;
+      margin: 0 auto; }
+      .wrap .footer .wrapper .about {
+        float: left;
+        margin: 0 0 0 -10px;
+        color: #ccc;
+        text-align: center; }
+        .wrap .footer .wrapper .about a {
+          margin: 0 10px;
+          color: #666;
+          font: 12px/1.5 Arial; }
+      .wrap .footer .wrapper .copyright {
+        float: right;
+        color: #666;
+        font: 12px/1.5 Arial; }

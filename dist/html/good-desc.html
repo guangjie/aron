@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/goods.css">
+        <link rel="stylesheet" href="../css/desc.css">
+        <link rel="stylesheet" href="../iconfont/iconfont.css">
+        <script src = '../js/require.js' async="true" defer data-main = '../js/main'></script>
+    </head>
+        <body class="iconfont">
+        <!--header start-->
+        <header>
+            <div class="header">
+                <h1>商城首页</h1>
+                <p> Hi~欢迎来到Z商城，请<a href="#">登陆</a><a href="#">免费注册</a></p>
+                <ul class="header-list-1">
+                    <li><a href="#">我的订单</a></li>
+                    <li><a id="buyer-center" href="#">买家中心<i>&#xe642</i></a></li>
+                    <ul id="buyer-center-con" style="position: absolute">
+                        <li><a style="font-size: 10px;width: 60px" href="#">关注的店铺</a><span>30</span></li>
+                        <li><a style="font-size: 10px;width: 60px" href="#">关注的商品</a><span>48</span></li>
+                    </ul>
+                    <li><a href="#">购物车<em>0</em>件</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                    <li id="tab" style="margin: 0 12px">|</li>
+                    <li id="iphone1"><i id="iphone">&#xe63d</i><a href="#" style="text-indent: 12px">手机商城<i style="text-indent: 0">&#xe642</i></a></li>
+                    <div id="mobile-bd" style="position: absolute">
+                        <img src="http://icon.zol-img.com.cn/zol_shop_logo/shop_wechat.png">
+                    </div>
+                    <li><a href="#">中关村在线</a></li>
+                    <li><a href="#">招商合作</a></li>
+                    <li><a href="#">联系客服<i>&#xe642</i></a></li>
+                </ul>
+            </div>
+        </header>
+        <!--header end-->
+        <!--nav start-->
+        <nav>
+            <div class="nav">
+                <div class="logo">
+                    <img src="http://icon.zol-img.com.cn/newshop/shop/index/logo_130x60.png">
+                </div>
+                <div class="city-map">
+                    <span id="map-index">青岛 <i>&#xe642</i></span>
+                    <div class="space"></div>
+                    <ul class="city-list" style="position: absolute">
+                        <li><a href="#">北京</a></li>
+                        <li><a href="">成都</a></li>
+                        <li><a class="cur" href="">青岛</a></li>
+                        <li><a href="">西安</a></li>
+                        <li><a href="">郑州</a></li>
+                        <li><a href="">石家庄</a></li>
+                        <li><a href="">平顶山</a></li>
+                        <li><a href="">上海</a></li>
+                        <li><a href="">德阳</a></li>
+                        <li><a href="">邢台</a></li>
+                        <li><a href="">承德</a></li>
+                        <li><a href="">驻马店</a></li>
+                        <li><a href="">安阳</a></li>
+                        <li><a href="">新乡</a></li>
+                        <li><a href="">宝鸡</a></li>
+                        <li><a href="">全国</a></li>
+                    </ul>
+                </div>
+                <div class="search-box">
+                    <form>
+                        <input type="text" placeholder="找找你想要的商品" class="search-text">
+                        <input type="submit" value="搜索" class="search-btn">
+                        <div class="search-hot">
+                            <a href="#">戴尔限时促销</a>
+                            <a href="#">三星note7</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="quick-entry">
+                    <a href="#"><i>&#xe60a;</i>我的订单<em></em></a>
+                    <a href="#"><i>&#xe697;</i>我的优惠劵<em></em></a>
+                    <a href="#"><i>&#xe630;</i>购物车<em></em></a>
+                </div>
+            </div>
+        </nav>
+        <!--nav end-->
+        <!--navlist start-->
+        <div class="nav-list-box">
+            <div class="nav-list goods">
+                <h1 id="nav-start"><i>&#xe60a;</i>&nbsp;&nbsp;&nbsp;&nbsp;全部分类</h1>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">团购</a></li>
+                    <li><a href="#">电子竞技</a></li>
+                    <li><a href="#">本地优选</a></li>
+                    <li><a href="#">竞技优选</a></li>
+                </ul>
+            </div>
+            <div  id="nav" class="nav-list-2 nav-list-21" style="position: absolute;left: 112px;display: none;z-index: 20">
+                <ul id="nav-list5" >
+                    <li><i>&#xe63d;</i>&nbsp;&nbsp;&nbsp;&nbsp;手机<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xe68c;</em></li>
+                    <li><i>&#xe615;</i>&nbsp;&nbsp;&nbsp;&nbsp;电脑<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xe68c;</em></li>
+                    <li><i>&#xe632;</i>&nbsp;&nbsp;&nbsp;&nbsp;DIY<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xe68c;</em></li>
+                    <li><i>&#xe610;</i>&nbsp;&nbsp;&nbsp;&nbsp;数码<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xe68c;</em></li>
+                    <li><i>&#xe611;</i>&nbsp;&nbsp;&nbsp;&nbsp;外设<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xe68c;</em></li>
+                    <li><i>&#xe7a3;</i>&nbsp;&nbsp;&nbsp;&nbsp;智能<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#xe68c;</em></li>
+                </ul>
+            </div>
+            <div id="nav-list-desc" style="position: absolute">
+                <ul id="list-items"></ul>
+
+            </div>
+        </div>
+        <!--navlist end-->
+        <!--content start-->
+            <div class="de-wrapper">
+                <div class="bread-crumbs">
+                    <a href="#">首页</a> > <a href="#">手机</a> > <a href="#">魅族</a>
+                </div>
+                <div class="de-detail">
+                    <div class="de-focus">
+                        <div class="big-image">
+                            <div class="block"></div>
+                            <img src="http://i3mercrt.fd.zol-img.com.cn/t_s400x400/g5/M00/07/06/ChMkJlr5MIqIFqimAAGcvJI--J0AAoYDQGCt1YAAZzU523.jpg" id="sim811930">
+                        </div>
+                        <div class="img-list">
+                            <ul>
+                                <li id="1" style="cursor:pointer;" class="hover">
+                                    <a href="javascript:void(0)"><img style="padding:0px;" src="http://i3mercrt.fd.zol-img.com.cn/t_s70x70/g5/M00/07/06/ChMkJlr5MIqIFqimAAGcvJI--J0AAoYDQGCt1YAAZzU523.jpg"></a>
+                                    <i class="border" style="width:-4px;"></i>
+                                </li>
+                                <li id="2" style="cursor:pointer;" class="">
+                                    <a href="javascript:void(0)"><img style="padding:0px;" src="http://i2mercrt.fd.zol-img.com.cn/t_s70x70/g5/M00/01/04/ChMkJlpVgWCIecypAAF5SWJssEoAAj_0wLa8PQAAXlh092.jpg"></a>
+                                    <i style="width:-4px;" class=""></i>
+                                </li>
+                                <li id="3" style="cursor:pointer;" class="">
+                                    <a href="javascript:void(0)"><img style="padding:0px;" src="http://i0mercrt.fd.zol-img.com.cn/t_s70x70/g5/M00/03/0E/ChMkJ1l5ZASIaIlGAAMBn2vQcXcAAfK5ABJoI8AAwG3750.jpg"></a>
+                                    <i style="width:-4px;" class=""></i>
+                                </li>
+                                <li id="4" style="cursor:pointer;" class="">
+                                    <a href="javascript:void(0)"><img style="padding:0px;" src="http://i3mercrt.fd.zol-img.com.cn/t_s70x70/g5/M00/03/0E/ChMkJll5ZAOIJ4FbAAK9KOzOyngAAfK5AA6eHgAAr1A839.jpg"></a>
+                                    <i style="width:-4px;" class=""></i>
+                                </li>
+                                <li id="5" style="cursor:pointer;" class="">
+                                    <a href="javascript:void(0)"><img style="padding:0px;" src="http://i5mercrt.fd.zol-img.com.cn/t_s70x70/g5/M00/03/0E/ChMkJll5ZAeIbdQ8AAKcn2PHl-IAAfK5ABpQWEAApy3355.jpg"></a>
+                                    <i style="width:-4px;" class=""></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="zs-active">
+                            <a>关注商品</a>
+                            <a>分享</a>
+                        </div>
+                        <div class="big-img-desc">
+                            <img src="http://i3mercrt.fd.zol-img.com.cn/t_s400x400/g5/M00/07/06/ChMkJlr5MIqIFqimAAGcvJI--J0AAoYDQGCt1YAAZzU523.jpg" id="sim8119301">
+                        </div>
+                    </div>
+                    <div class="de-detail-wrap">
+                        <h3 class="zs-commodity-title">
+                            【现货包邮 送壳膜】小米Max2 全网通 4GB运行  移动联通电信4G手机
+                            <span class="subheading">6.44英寸屏幕，5300毫安电池，骁龙625处理器，轻薄金属机身小米Max2！</span>
+                        </h3>
+                        <div class="zs-price-panel">
+                            <dl class="zs-sale-price">
+                                <dt id="zs-price">价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：</dt>
+                                <dd class="clearfix">
+                                    <span class="zs-price">¥<em id="zp-goods-price">939.00</em></span>
+                                    <span class="zs-countdown" id="callsStored" style="display: none;"></span>
+                                </dd>
+                            </dl>
+                            <dl class="sale-activity">
+                                <dt>促&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;销：</dt>
+                                <dd>
+                                    <ul>
+                                        <li><span class="caption">赠品</span>
+                                            <div class="gifts clearfix">
+                                                                                                                                    <span><a href="javascript:;" title="购买本品赠送指环支架*1颜色随机发，活动不叠加（图片仅供参考以实物为准）"><img src="http://i3.mercrt.fd.zol-img.com.cn/t_s50x50/g5/M00/04/0C/ChMkJltetJqIOW_NAAAJy13AVmcAAqNagKxcoAAAAnj238.jpg" alt="指环支架*1颜色随机发，活动不叠加（图片仅供参考以实物为准）" width="44" height="44"></a>
+                                                                                                                                                        <em class="number">x1</em>
+                                                                                                                                                    </span>
+                                                <span class="and">+</span>
+                                                <span><a href="javascript:;" title="购买本品赠送透明手机软壳*1（图片仅供参考以实物为准）"><img src="http://i3.mercrt.fd.zol-img.com.cn/t_s50x50/g5/M00/04/0C/ChMkJltetEWIbn0TAAAPkOXYxSUAAqNagBGY2gAAA-o657.jpg" alt="透明手机软壳*1（图片仅供参考以实物为准）" width="44" height="44"></a>
+                                                                                                                                                        <em class="number">x1</em>
+                                                                                                                                                    </span>
+                                                <span class="and">+</span>
+                                                <span><a href="javascript:;" title="购买本品赠送钢化膜*1运输途中损坏不补发（图片仅供参考以实物为准）"><img src="http://i3.mercrt.fd.zol-img.com.cn/t_s50x50/g5/M00/04/0C/ChMkJltetDSIc8ekAAALrzB1UKgAAqNaQP_s1MAAAvH256.jpg" alt="钢化膜*1运输途中损坏不补发（图片仅供参考以实物为准）" width="44" height="44"></a>
+                                                                                                                                                        <em class="number">x1</em>
+                                                                                                                                                    </span>
+                                                <span class="and">+</span>
+                                                <span><a href="javascript:;" title="购买本品赠送店铺延保一年*1（全国联保一年加店铺延保一年共计两年）"><img src="http://i3.mercrt.fd.zol-img.com.cn/t_s50x50/g5/M00/0B/0B/ChMkJ1kqL8mIQvPtAAAWJXY3P58AAcqUgAbsDIAABY9111.jpg" alt="店铺延保一年*1（全国联保一年加店铺延保一年共计两年）" width="44" height="44"></a>
+                                                                                                                                                        <em class="number">x1</em>
+                                                                                                                                                    </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl class="receive-coupons">
+                                <dt>领&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;券：</dt>
+
+                                <dd class="clearfix">
+                                    <a data-couponid="1636" data-start="18.09.16" data-stop="18.10.16" href="javascript:;" class="coupon"><span>¥3(满¥999可用)</span><i class="left-bg"></i><i class="right-bg"></i></a>
+                                    <a data-couponid="1642" data-start="18.09.27" data-stop="18.10.27" href="javascript:;" class="coupon"><span>¥10(满¥4299可用)</span><i class="left-bg"></i><i class="right-bg"></i></a>
+                                    <a data-couponid="1644" data-start="18.09.27" data-stop="18.10.27" href="javascript:;" class="coupon"><span>¥5(满¥2399可用)</span><i class="left-bg"></i><i class="right-bg"></i></a>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="zs-detail-infor">
+                            <dl>
+                                <dt>配送:</dt>
+                                <dd>
+                                   <span class="area-name">山东</span>
+                                    <span>可送达，快递包邮</span>
+                                </dd>
+                            </dl>
+                            <dl class="zs-evaluate">
+                                <dt>评&nbsp;&nbsp;&nbsp;&nbsp;价：</dt>
+                                <dd><a id="a-buy-review">购买评价&nbsp;<em>217</em></a><span class="line">|</span>
+                                    <a id="a-buy-record">成交记录&nbsp;<em>406</em></a></dd>
+                            </dl>
+                            <dl class="zs-service-bar" style="z-index:1;">
+                                <dt>服务保障：</dt>
+                                <dd class="clearfix">  &nbsp;&nbsp;由<span style="color:#ff0000;"><a href="http://www.zol.com/shop_194784/" target="_blank" class="link" id="zs_shop_url">汇通数码风暴专营店</a></span>发货并承诺提供以下服务保障</dd>
+                            </dl>
+                            <div class="skin-inner">
+                                <dl>
+                                    <dt>商品颜色:</dt>
+                                    <dd><span>金色</span></dd>
+                                </dl>
+                                <dl>
+                                    <dt>内存容量:</dt>
+                                    <dd><span>行货32GB</span><span>行货64GB</span><span>行货128GB</span></dd>
+                                </dl>
+                                <dl>
+                                    <dt>购买方式</dt>
+                                    <dd><span>非合约机</span></dd>
+                                </dl>
+                                <dl>
+                                    <dt>套装</dt>
+                                    <dd><span>官方套装</span><span>套装1</span><span>套装2</span></dd>
+                                </dl>
+                                <dl style="margin-top: 10px">
+                                    <dt>购买数量</dt>
+                                    <dd class="clearfix"><span style="margin: 0">+</span><input type="text" value="1"><span>-</span></dd>
+                                </dl>
+                                <div class="zs-detail-btn">
+                                    <a id="buynow">立即购买</a>
+                                    <a id="add-shop">加入购物车</a>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                
+                </div>
+            </div>
+        <!--content end -->
+        <!--footer start-->
+        <footer>
+            <div class="footer">
+                <div class="footer-service">
+                    <ul>
+                        <li>
+                            <p class="top">先行赔付</p>
+                            <p class="below">权益受损先行赔偿</p>
+                        </li>
+                        <li>
+                            <p class="top">先行赔付</p>
+                            <p class="below">权益受损先行赔偿</p>
+                        </li>
+                        <li>
+                            <p class="top">先行赔付</p>
+                            <p class="below">权益受损先行赔偿</p>
+                        </li>
+                        <li>
+                            <p class="top">先行赔付</p>
+                            <p class="below">权益受损先行赔偿</p>
+                        </li>
+                        <li>
+                            <p class="top">先行赔付</p>
+                            <p class="below">权益受损先行赔偿</p>
+                        </li>
+                        <li>
+                            <p class="top">先行赔付</p>
+                            <p class="below">权益受损先行赔偿</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-service-relative">
+                    <div class="foot-list">
+                        <ul>
+                            <p>购物指南</p>
+                            <li>账号注册</li>
+                            <li>购物流程</li>
+                            <li>付款方式</li>
+                        </ul>
+                        <ul>
+                            <p>售后服务</p>
+                            <li>先行赔付</li>
+                            <li>退款退货流程</li>
+                            <li>投诉举报</li>
+                        </ul>
+                        <ul>
+                            <p>购物指南</p>
+                            <li>账号注册</li>
+                            <li>购物流程</li>
+                            <li>付款方式</li>
+                            <li>付款方式</li>
+                        </ul>
+                        <ul>
+                            <p>售后服务</p>
+                            <li>先行赔付</li>
+                        </ul>
+                    </div>
+                    <div class="foot-list1">
+                        <dl class="hotline">
+                            <dt>400-688-1999</dt>
+                            <dd>
+                                <p>工作日 9:00 - 18:00</p>
+                            </dd>
+                        </dl>
+                        <dl class="cooperation1">
+                            <dt>招商合作</dt>
+                            <dd>
+                                <p>助力3C零售商互联网转型</p>
+                                <p>开启新零售时代全新旅程！</p>
+                                <a href="http://www.rongroad.com/" class="btn" target="_blank"><span>查看详细</span>&gt;</a>
+                            </dd>
+                        </dl>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-nav-box">
+            <div class="footer-nav">
+                <ul id="list-nav">
+                    <li>中关村在线</li><span>|</span>
+                    <li>z商城</li><span>|</span>
+                    <li>团购</li><span>|</span>
+                    <li>产品报价</li><span>|</span>
+                    <li>论坛</li><span>|</span>
+                    <li>问答</li>
+                </ul>
+                <ul id="list-nav2">
+                    <li>中关村在线</li><span>|</span>
+                    <li>z商城</li><span>|</span>
+                    <li>团购</li><span>|</span>
+                    <li>产品报价</li><span>|</span>
+
+                </ul>
+                <p>©2018 中关村在线 版权所有. 京ICP证150096号京ICP备14061128号网络文化经营许可证京网文[2016]1631-199</p>
+                <div class="weixi">
+                    <img src="http://icon.zol-img.com.cn/newshop/shop/index/qr.png">
+                </div>
+            </div>
+        </div>
+        <div id="con-nav-">
+
+            <a href="" class="floor">领券中心</a>
+            <a href="" class="floor">同城购</a>
+            <a href="" class="floor">Z智选</a>
+            <a href="" class="floor">品牌精选</a>
+            <a href="" class="floor">团购</a><a href="javascript:;" class="floor">电子竞技</a>
+            <a href="" class="floor">家电优选</a>
+            <a href="" class="floor">数码潮品</a>
+            <a href="" class="floor">本周热销</a>
+            <a class="back-top" href="">回顶部<span class="trangle"></span></a>
+
+        </div>
+        <!--footer end-->
+
+        <div class="zc-toolbar-tabbar">
+            <i>&#xe60a;</i>
+            <i>&#xe7a3;</i>
+            <i>&#xe630;</i>
+            <i>&#xe697;</i>
+            <i>&#xe628;</i>
+            <i id="shop-nums" style="position: absolute;top:225px;right:10px;width: 16px;height: 16px;border-radius: 8px;background-color: red;line-height: 14px;font-size: 10px">0</i>
+            <p class="p1">我的订单</p>
+            <p class="p2">我的足迹</p>
+            <p class="p3">购物车</p>
+            <p class="p4">优惠券</p>
+            <p class="p5">返回顶部</p>
+        </div>
+    </body>
+</html>
